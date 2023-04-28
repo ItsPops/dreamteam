@@ -4,10 +4,13 @@ François :
 - &&&
 
 David : 
-- Joli rapport
+- &&&
 
 Enzo :
 - &&& 
 
 Bryann :
 - KK
+
+Jean : 
+- ReadME

@@ -34,3 +34,5 @@ override.tf.json
 .terraformrc
 terraform.rc
 Z_ACCESS AWS.txt
+.DS_Store
+Répartion du travail.md
