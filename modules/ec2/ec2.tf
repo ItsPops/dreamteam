@@ -1,8 +1,12 @@
+module "sg" {
+  source = "../sg"
+}
 resource "aws_instance" "ec2-dreamteam" {
   ami           = data.aws_ami.app_ami.id # Image Amazon Linux la plus à jour
   instance_type = var.instancetype
   tags = var.tags
   key_name = var.key_name
+  vpc_security_group_ids = [module.sg.security_group_id]
 
 
  connection {
@@ -34,8 +38,6 @@ provisioner "remote-exec" {
 
   # Définition de l'adresse IP publique
   # associate_public_ip_address = true
-
-  # vpc_security_group_ids = [aws_security_group.sg-dreamteam.id]
 
   # Définition de l'adresse IP publique
 
