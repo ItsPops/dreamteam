@@ -3,7 +3,6 @@ variable "instancetype" {
     default = "t2.micro"
 }
 
-
 variable "aws_access_key" {
     type = string
     default = ""
@@ -36,8 +35,6 @@ variable "key_name" {
     default = "kp-dreamteam"
 }
 
-
-
 variable "ebs_size" {
     type = number
     default = 20
@@ -46,4 +43,9 @@ variable "ebs_size" {
 variable "ebs_tags" {
     type = string
     default = "ebs-tags"
+}
+
+variable "vpc_id" {
+    type = string
+    default = "dreamteam-eip"
 }

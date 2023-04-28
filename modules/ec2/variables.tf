@@ -7,7 +7,7 @@ variable "private_key_path" {
 }
 
 variable "tags" {
-    type = map(string)
+    type = map
     default = {
         Name = "toto"
     }   
