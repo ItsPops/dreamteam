@@ -1,5 +1,5 @@
 resource "aws_instance" "dreamteam" {
-  ami           = "ami-03c7d01cf4dedc891" # Image Amazon Linux la plus à jour
+  ami           = data.aws_ami.app_ami.id # Image Amazon Linux la plus à jour
   instance_type = var.instancetype
   tags = var.tags
   key_name = var.key_name
