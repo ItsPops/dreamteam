@@ -1,4 +1,0 @@
-IP: 54.161.175.77
-Zone: us-east-1c
-IP: 54.175.209.179
-Zone: us-east-1c
