@@ -34,7 +34,11 @@ override.tf.json
 .terraformrc
 terraform.rc
 Z_ACCESS AWS.txt
-.DS_Store
 Répartion du travail.md
-.DS_Store
+
 .gitattributes
+
+# Ignore Mac DS_Store files
+.DS_Store
+.DS_Store?
+**/.DS_Store
