@@ -1,4 +1,4 @@
-resource "aws_instance" "dreamteam" {
+resource "aws_instance" "ec2-dreamteam" {
   ami           = data.aws_ami.app_ami.id # Image Amazon Linux la plus à jour
   instance_type = var.instancetype
   tags = var.tags
@@ -23,8 +23,8 @@ provisioner "local-exec" {
 
 provisioner "remote-exec" {
     inline = [
-      #"sudo yum update -y",
-      "sudo amazon-linux-extras install -y nginx1.12",
+      "sudo apt update",
+      "sudo apt install nginx",
       "sudo systemctl start nginx"
     ]
   }

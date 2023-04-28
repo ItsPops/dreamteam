@@ -1,10 +1,10 @@
 data "aws_ami" "app_ami" {
     most_recent = true
-    owners = ["amazon"]
+    owners = ["099720109477"]
 
     filter {
         name = "name"
-        values = ["amzn2-ami-hvm*"]
+        values = ["ubuntu-bionic*"]
     }
     filter {
         name = "architecture"
