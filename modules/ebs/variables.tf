@@ -1,7 +1,7 @@
 variable "tags" {
     type        = map
     default = {
-        name = "toto"
+        Name = "toto"
     }   
 }
 
